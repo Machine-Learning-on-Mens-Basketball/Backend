@@ -12,6 +12,9 @@ This app will handle all of the requests from the front end and call upon the de
 `pip install -r requirements.txt --user`
 2. From the root folder, run the following to start the app: `python manage.py`
 
+## Testing
+There is only one test service running that returns a preset value. To test, run the app and use the following url: `http://127.0.0.1:5000/predict?team1=blank&team2=blank` replacing the blanks with names of teams. If the query is successful, it should return a 0 code, a message, and the given payload.
+
 ## Principle Practices
 The architecture of this app follows the following design patterns/rules:
 * REST
